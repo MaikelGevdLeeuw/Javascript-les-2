@@ -3,9 +3,14 @@
 // Schrijf een script dat iedere naam in onderstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
-
+console.log("----------");
+console.log("Opdracht 1");
 const names = ["Henk", "Piet", "Fred", "Joop"];
-
+console.log(names)
+for (let i = 0; i < names.length; i++){
+    names[i] = names[i] + "je";
+}
+console.log(names)
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
@@ -21,18 +26,25 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
+console.log("----------");
+console.log("Opdracht 2");
 const numbers = [2, 4, 5, 29, 38];
 
+console.log(numbers)
+for (let i = 0; i < numbers.length; i++){
+    if(numbers[i] % 2 === 0){
+        numbers[i] = numbers[i] * 2;
+    }
+    else{
+        numbers[i] = numbers[i] * 3;
+    }
+}
+console.log(numbers);
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
-
-
-
-
 
 // ==========================================
 // Opdracht 3
@@ -41,9 +53,15 @@ const numbers = [2, 4, 5, 29, 38];
 // Vervolgens moet de huidige waarde in de array overschreven worden met: "Het volume van [a] is [b]"
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
+console.log("----------");
+console.log("Opdracht 3");
 const squares = [30, 2, 8, 24, 11];
+console.log(squares)
 
+for (let i = 0; i < squares.length; i++){
+    squares[i] = "het volume van " + squares[i] + " is " + squares[i]**3
+}
+console.log(squares)
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(squares) geeft: [30, 2, 8, 24, 11];
